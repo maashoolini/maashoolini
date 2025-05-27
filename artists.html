@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>कलाकार पंजीकरण | Artist Registration - Shoolini Mela</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+   <header class="navbar">
+    <div class="container">
+      <img src="assets/logo.png" alt="Shoolini Mata" class="logo" /> 
+      <nav>
+        <ul>
+          <section class="hero-section">
+              <h1>शूलिनी माता मेला 2025</h1>
+          </section>
+          <li><a href="index.html">🏠 HOME</a></li>
+          <li><a href="importantdates.html" class="active">📅 महत्वपूर्ण तिथियां</a></li>
+          <li><a href="artists.html">🎭 ARTISTS REGISTRATION</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="artist-form">
+    <div class="container">
+      <h1>🎭 कलाकार पंजीकरण | Artist Registration 🎨</h1>
+      <div class="form-container">
+        <div class="form-info">
+          <div class="info-card">
+            <i class="fas fa-star"></i>
+            <p>शूलिनी माता मेला में अपनी कला का प्रदर्शन करें!</p>
+            <p><strong>Showcase your talent at Shoolini Mata Mela!</strong></p>
+          </div>
+        </div>
+        
+        <!-- Custom Colorful Form that submits to Google Forms -->
+        <form id="artistForm" class="custom-form" action="https://docs.google.com/forms/d/e/1FAIpQLScLcFLwfafaRx-r4LlDxV0wf1RYX8SURATndumljYuq_9NWaw/formResponse" method="POST" target="hidden_iframe">
+          
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">
+                <i class="fas fa-user"></i>
+                नाम | Name *
+              </label>
+              <input type="text" name="entry.741179210" id="name" required placeholder="अपना पूरा नाम लिखें">
+            </div>
+            
+            <div class="form-group">
+              <label for="place">
+                <i class="fas fa-map-marker-alt"></i>
+                स्थान | Place *
+              </label>
+              <input type="text" name="entry.1227643552" id="place" required placeholder="आपका शहर/गांव">
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="mobile">
+                <i class="fas fa-phone"></i>
+                मोबाइल नंबर | Mobile Number *
+              </label>
+              <input type="tel" name="entry.806203863" id="mobile" required placeholder="+91 XXXXX XXXXX">
+            </div>
+            
+            <div class="form-group">
+              <label for="email">
+                <i class="fas fa-envelope"></i>
+                ईमेल | Email *
+              </label>
+              <input type="email" name="entry.372551318" id="email" required placeholder="your.email@example.com">
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="age">
+                <i class="fas fa-birthday-cake"></i>
+                आयु | Age *
+              </label>
+              <!-- Fixed: Changed entry name for age -->
+              <input type="number" name="entry.57426079" id="age" required placeholder="10" min="1" max="120">
+            </div>
+            
+            <div class="form-group">
+              <label for="category">
+                <i class="fas fa-palette"></i>
+                कला की श्रेणी | Category of Art *
+              </label>
+              <select name="entry.1043728595" id="category" required>
+                <option value="">-- चयन करें | Choose --</option>
+                <option value="MUSIC">🎵 संगीत | Music</option>
+                <option value="DANCE">💃 नृत्य | Dance</option>
+                <option value="POETRY">📝 कविता | Poetry</option>
+                <option value="DRAMA">🎭 नाटक | Drama</option>
+                <option value="OTHERS">🎨 अन्य | Others</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group full-width">
+            <label for="language">
+              <i class="fas fa-language"></i>
+              प्रदर्शन की भाषा | Language of Performance *
+            </label>
+            <select name="entry.391671354" id="language" required>
+              <option value="">-- चयन करें | Choose --</option>
+              <option value="PUNJABI">पहाड़ी | Pahadi</option>
+              <option value="PUNJABI">पंजाबी | Punjabi</option>
+              <option value="HINDI">हिंदी | Hindi</option>
+              <option value="ENGLISH">अंग्रेज़ी | English</option>
+              <option value="OTHERS">अन्य | Others</option>
+            </select>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="artist_type">
+                <i class="fas fa-users"></i>
+                कलाकार प्रकार | Artist Type *
+              </label>
+              <select name="entry.323039370" id="artist_type" required>
+                <option value="">-- चयन करें | Choose --</option>
+                <option value="SOLO">👤 एकल | Solo</option>
+                <option value="TEAM BASED">👥 टीम आधारित | Team Based</option>
+              </select>
+            </div>
+            
+            <div class="form-group">
+              <label for="team_size">
+                <i class="fas fa-hashtag"></i>
+                टीम का आकार | Team Size *
+              </label>
+              <input type="number" name="entry.1159026822" id="team_size" required placeholder="1" min="1" max="50">
+            </div>
+          </div>
+
+          <div class="form-group full-width">
+            <label for="description">
+              <i class="fas fa-info-circle"></i>
+              कला का विवरण | Art Description *
+            </label>
+            <textarea name="entry.1203239677" id="description" required placeholder="अपनी कला के बारे में विस्तार से बताएं... | Describe your art in detail..."></textarea>
+          </div>
+          
+
+
+          <div class="form-group full-width">
+            <label for="content">
+              <i class="fas fa-file-alt"></i>
+              कलाकार सामग्री | Artist Content *
+            </label>
+            <textarea name="entry.1941289881" id="content" required placeholder="आप क्या प्रस्तुत करेंगे? कृपया अपनी Instagram या YouTube की लिंक साझा करें और अपनी सबसे अच्छी वीडियो को यहाँ पेस्ट करें। | What will you present? Please paste the link to your Instagram or YouTube and share your best videos here. socail media links are also accepted."></textarea>
+          </div>
+
+          <div class="form-group full-width">
+            <label for="past_performance">
+              <i class="fas fa-history"></i>
+              पिछले प्रदर्शन | Past Performance *
+            </label>
+            <textarea name="entry.451741981" id="past_performance" required placeholder="आपने पहले कहाँ प्रदर्शन किया है? | Where have you performed before? write some description here..."></textarea>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="fee">
+                <i class="fas fa-rupee-sign"></i>
+                अपेक्षित शुल्क | Expected Fee *
+              </label>
+              <input type="number" name="entry.1167864792" id="fee" required placeholder="₹ 0 (यदि निःशुल्क है तो 0 लिखें)">
+            </div>
+          </div>
+
+          
+          
+
+          <div class="form-group full-width">
+            <label for="consent">
+              <i class="fas fa-handshake"></i>
+              सहमति | Consent *
+            </label>
+            
+            <div class="consent-container">
+              <div class="consent-text">
+                <p><strong>English:</strong></p>
+                <p>By proceeding, you consent to the collection and use of your personal data under the Digital Personal Data Protection Act, 2023, solely for artist registration and event management purposes. You may access, correct, or withdraw your consent at any time.</p>
+                
+                <p><strong>हिंदी:</strong></p>
+                <p>आप डिजिटल व्यक्तिगत डेटा संरक्षण अधिनियम, 2023 के तहत अपने डेटा के उपयोग की सहमति देते हैं। इसका उपयोग केवल कलाकार पंजीकरण और कार्यक्रम प्रबंधन के लिए होगा। आप कभी भी अपनी सहमति देख, सुधार या वापस ले सकते हैं।</p>
+              </div>
+              
+              <div class="checkbox-group">
+                <input type="checkbox" id="consent-checkbox" name="entry.982317685" value="YES" required>
+                <label for="consent-checkbox" class="checkbox-label">
+                  <i class="fas fa-check-circle consent-icon"></i>
+                  मैं उपरोक्त नियमों और शर्तों से सहमत हूं | I agree to the above terms and conditions *
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <button type="submit" class="submit-btn">
+            <i class="fas fa-paper-plane"></i>
+            पंजीकरण करें | Register Now
+            <div class="btn-shine"></div>
+          </button>
+        </form>
+
+        <!-- Hidden iframe for form submission -->
+        <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="handleFormSubmit()"></iframe>
+
+        <!-- Success Message -->
+        <div id="success-message" class="success-message" style="display: none;">
+          <i class="fas fa-check-circle"></i>
+          <h3>पंजीकरण सफल! | Registration Successful!</h3>
+          <p>धन्यवाद! आपका पंजीकरण सफलतापूर्वक हो गया है।</p>
+          <p><strong>Thank you! Your registration has been completed successfully.</strong></p>
+          <p>हम जल्द ही आपसे संपर्क करेंगे। | We will contact you soon.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+ <footer>
+        <div class="festival-info">
+          <h3>🎊 शूलिनी माता मेला 2025 🎊</h3>
+          <p>सोलन की गौरवशाली सांस्कृतिक परंपरा</p>
+          <p><em>"Celebrating Divine Grace & Cultural Heritage"</em></p>
+        </div>
+      </div>
+</footer>
+  <script>
+    let formSubmitted = false;
+
+    function handleFormSubmit() {
+      if (formSubmitted) {
+        // Hide the form
+        document.getElementById('artistForm').style.display = 'none';
+        
+        // Show success message
+        document.getElementById('success-message').style.display = 'block';
+        
+        // Scroll to success message
+        document.getElementById('success-message').scrollIntoView({ 
+          behavior: 'smooth' 
+        });
+        
+        // Reset flag
+        formSubmitted = false;
+      }
+    }
+
+    // Add form submit event listener
+    document.getElementById('artistForm').addEventListener('submit', function(e) {
+      formSubmitted = true;
+    });
+
+    // Alternative method using setTimeout
+    document.getElementById('artistForm').addEventListener('submit', function(e) {
+      setTimeout(function() {
+        document.getElementById('artistForm').style.display = 'none';
+        document.getElementById('success-message').style.display = 'block';
+        document.getElementById('success-message').scrollIntoView({ 
+          behavior: 'smooth' 
+        });
+      }, 1000); // Wait 1 second for form submission
+    });
+  </script>
+</body>
+</html>
